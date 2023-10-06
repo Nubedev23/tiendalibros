@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0cap;
+}
+li{
+    color: blueviolet;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: palegreen;
+}
