@@ -1,0 +1,9 @@
+.cardProducto {
+    border: 2px solid lightpink;
+    margin: 5px;
+    width: 30%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}

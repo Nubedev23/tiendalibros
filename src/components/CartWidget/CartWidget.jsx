@@ -1,10 +1,10 @@
 import React from 'react'
 import './CartWidget.css';
 const CartWidget = () => {
-    const imageCarrito = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnPjEGWfHJ2EOWxfYUAHEGS5URAfSnRVQtaAqRIgG6Jm3onx9eMbJN2VbY5oaBROYJas&usqp=CAU"
+    const imageCarrito = "./carrt.png"
   return (
     <div>
-        <img className='imageCarrito' src={imageCarrito} alt="Un Carrito de compras" />
+        <img className='imgCarrito' src={imageCarrito} alt="Un Carrito de compras" />
         <p className="cartNumber"> 2 </p>
     </div>
   )

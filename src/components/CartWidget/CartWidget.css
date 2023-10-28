@@ -1,8 +1,8 @@
-.imgageCarrito{
+.imgCarrito{
     width: 100px;
 }
 .cartNumber{
-    float: right;
+    float: inline-end;
     color: burlywood;
     background-color: blue;
     border-radius: 5px;

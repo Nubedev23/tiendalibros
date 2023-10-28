@@ -2,13 +2,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 0cap;
+    border: 5px solid lightcyan;
+    
 }
 li{
     color: blueviolet;
     cursor: pointer;
+    display: inline-block;
+    margin: 10px;
 }
 
 li:hover{
     background-color: palegreen;
+}
+.logoLibreria {
+    width: 100px;
 }
