@@ -2,50 +2,56 @@ const misProductos = [
     {
         id: "1",
         titulo: "Diez negritos",
+        autor: "Agatha Christie",
         precio: 12990,
         img: "../Diez-negritos-Agatha-Christie.jpg",
         idCat: "5",
-        cantidad: 8
+        stock: 8
     },
     {
         id: "2",
         titulo: "Estudio en escarlata",
+        autor: "Arthur Conan Doyle",
         precio: 6500,
         img: "../estudioenescarlata.jpg",
         idCat: "5",
-        cantidad: 5
+        stock: 5
     },
     {
         id: "3",
         titulo: "Orgullo y Prejuicio",
+        autor: "Jane Austen",
         precio: 9990,
         img: "../orgullo-y-prejuicio-edicion-conmemorativa-penguin-768x1164.jpg",
         idCat: "2",
-        cantidad: 20
+        stock: 20
     },
     {
         id: "4",
         titulo: "Harry Potter y la Cámara secreta",
+        autor: "J.K. Rowling",
         precio: 8990,
         img: "../Harry-Potter-y-la-camara-secreta.jpg",
         idCat: "6",
-        cantidad:10
+        stock:10
     },
     {
         id: "5",
         titulo: "Dune",
+        autor: "Frank Herbert",
         precio: 10000,
         img: "../dune.png",
         idCat: "4",
-        cantidad: 5
+        stock: 5
     },
     {
         id: "6",
         titulo: "La comunidad del anillo",
+        autor: "J.R.R. Tolkien",
         precio: 7000,
         img: "../comunidadanillo.jpg",
         idCat: "3",
-        cantidad: 5
+        stock: 5
     }
 
 ]

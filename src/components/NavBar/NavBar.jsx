@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <header>
       <Link to="/">
-        <img src={"./book-logo.png"}alt="Logo Librería" className="logoLibreria" />
+        <img src={"../book-logo.png"}alt="Logo Librería" className="logoLibreria" />
       </Link>
         
         <h1>La mejor librería online a tu alcance</h1>
