@@ -6,7 +6,7 @@ const misProductos = [
         precio: 12990,
         img: "../Diez-negritos-Agatha-Christie.jpg",
         idCat: "5",
-        stock: 8
+        stock: 100
     },
     {
         id: "2",
@@ -15,7 +15,7 @@ const misProductos = [
         precio: 6500,
         img: "../estudioenescarlata.jpg",
         idCat: "5",
-        stock: 5
+        stock: 100
     },
     {
         id: "3",
@@ -24,7 +24,7 @@ const misProductos = [
         precio: 9990,
         img: "../orgullo-y-prejuicio-edicion-conmemorativa-penguin-768x1164.jpg",
         idCat: "2",
-        stock: 20
+        stock: 100
     },
     {
         id: "4",
@@ -33,7 +33,7 @@ const misProductos = [
         precio: 8990,
         img: "../Harry-Potter-y-la-camara-secreta.jpg",
         idCat: "6",
-        stock:10
+        stock:100
     },
     {
         id: "5",
@@ -42,7 +42,7 @@ const misProductos = [
         precio: 10000,
         img: "../dune.png",
         idCat: "4",
-        stock: 5
+        stock: 100  
     },
     {
         id: "6",
@@ -51,7 +51,7 @@ const misProductos = [
         precio: 7000,
         img: "../comunidadanillo.jpg",
         idCat: "3",
-        stock: 5
+        stock: 100
     }
 
 ]
