@@ -13,7 +13,6 @@ const ItemDetail = ({id, titulo, precio, img, autor, stock}) => {
   const {agregarAlCarrito} = useContext(CarritoContext);
   const manejadorCantidad = (cantidad) => {
     setAgregarCantidad(cantidad);
-    // console.log("Productos agregados: " + cantidad);
     const item = {id, titulo, precio};
     agregarAlCarrito(item, cantidad);
   }

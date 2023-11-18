@@ -41,15 +41,7 @@ const Checkout = () => {
             telefono,
             email
         };
-        // addDoc(collection(db, "ordenes"), orden)
-        //     .then(docRef => {
-        //         setOrdenId(docRef.id);
-        //         vaciarCarrito();
-        //     })
-        //     .catch(error => {
-        //         console.log("Error al crear la orden", error);
-        //         setError("Se produjo un erorr al crear la orden");
-        //     })
+     
 
         Promise.all(
             orden.items.map( async (productoOrden) => {
@@ -69,52 +61,54 @@ const Checkout = () => {
             .then(docRef => {
                 setOrdenId(docRef.id);
                 vaciarCarrito();
+                event.target.reset();
             })
             .catch( error => {
                 console.log("Error al crear la orden", error);
-                setError("Se produjo un error al crear la orden, vamos a morir!!!");
+                setError("Se produjo un error al crear la orden!!!");
             })
         })
         .catch((error) => {
-            console.log("No se pudo actualiza rel stock", error);
-            setError("No se puede actualizar el stock, intente en el supermercado Vital");
+            console.log("No se pudo actualizar el stock", error);
+            setError("No se puede actualizar el stock");
         })
     }
-    
+   
 
     return (
     <div>
         <h2>Checkout</h2>
 
-        <form onSubmit={manejadorFormulario}>
+        <form onSubmit={manejadorFormulario} >
            {
                 carrito.map(producto => (
                     <div key={producto.item.id}>
                         <p>{producto.item.titulo} x {producto.cantidad}</p>
-                        <p>Valor de cada libro: ${producto.item.precio}</p>
-                        <p>Total a pagar: ${(producto.item.precio)* (producto.cantidad)}</p>
+                        <p>Valor de cada libro: ${producto.item.precio} (clp)</p>
+                        
                         <hr />
                     </div>
                 ))
            }
+           <p>Total a pagar: ${total} (clp)</p>
            <div>
-                <label htmlFor="">Nombre</label>
+                <label htmlFor="">Nombre: </label>
                 <input type="text" onChange={(e)=> setNombre(e.target.value)}/>
            </div>
            <div>
-                <label htmlFor="">Apellido</label>
+                <label htmlFor="">Apellido: </label>
                 <input type="text" onChange={(e)=> setApellido(e.target.value)}/>
            </div>
            <div>
-                <label htmlFor="">Teléfono</label>
+                <label htmlFor="">Teléfono: </label>
                 <input type="tel" onChange={(e)=> setTelefono(e.target.value)}/>
            </div>
            <div>
-                <label htmlFor="">Email</label>
+                <label htmlFor="">Email: </label>
                 <input type="email" onChange={(e)=> setEmail(e.target.value)}/>
            </div>
            <div>
-                <label htmlFor="">Email confirmación</label>
+                <label htmlFor="">Email confirmación: </label>
                 <input type="email" onChange={(e)=> setEmailConfirmacion(e.target.value)}/>
            </div>
            {
